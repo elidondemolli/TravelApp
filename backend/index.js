@@ -9,10 +9,6 @@ DB()
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
-app.get('/', (req, res) => {
-    res.send('working')
-})
-
 app.listen(8000, () => {
     console.log('Backend server is running')
 })
